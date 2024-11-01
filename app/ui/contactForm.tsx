@@ -47,6 +47,7 @@ const ContactForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
       <input
+        className="p-4 w-96 h-12 bg-transparent shadow-innerboxglow border-white border-2 rounded-xl"
         type="text"
         name="name"
         value={formData.name}
@@ -55,6 +56,7 @@ const ContactForm: React.FC = () => {
         required
       />
       <input
+        className="p-4 h-12 bg-transparent shadow-innerboxglow border-white border-2 rounded-xl"
         type="email"
         name="email"
         value={formData.email}
@@ -63,6 +65,7 @@ const ContactForm: React.FC = () => {
         required
       />
       <textarea
+        className=" p-4 h-40 bg-transparent shadow-innerboxglow border-white border-2 rounded-xl"
         name="message"
         value={formData.message}
         onChange={handleChange}
