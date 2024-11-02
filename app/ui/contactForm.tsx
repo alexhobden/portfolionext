@@ -1,7 +1,9 @@
 // app/ContactForm.tsx
 "use client";
 
+import { div } from "framer-motion/client";
 import { useState } from "react";
+import React from "react";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -45,33 +47,46 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-      <input
-        className="p-4 w-96 h-12 bg-transparent shadow-innerboxglow border-white border-2 rounded-xl"
-        type="text"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-        placeholder="Your Name"
-        required
-      />
-      <input
-        className="p-4 h-12 bg-transparent shadow-innerboxglow border-white border-2 rounded-xl"
-        type="email"
-        name="email"
-        value={formData.email}
-        onChange={handleChange}
-        placeholder="Your Email"
-        required
-      />
-      <textarea
-        className=" p-4 h-40 bg-transparent shadow-innerboxglow border-white border-2 rounded-xl"
-        name="message"
-        value={formData.message}
-        onChange={handleChange}
-        placeholder="Your Message"
-        required
-      />
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col space-y-8 text-white w-[40rem]"
+    >
+      <h2 className="text-left text-3xl font-bold text-white">Contact Me!</h2>
+      <div>
+        <p className="text-left mb-4">Your name*</p>
+        <input
+          className="p-4 w-[40rem] h-12 bg-transparent border-white border-2 rounded-xl font-inria font-normal"
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div>
+        <p className="text-left mb-4">Your email*</p>
+        <input
+          className="p-4 w-[40rem] h-12 bg-transparent border-white border-2 rounded-xl font-inria font-normal"
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div>
+        <p className="text-left mb-4">Your message*</p>
+        <textarea
+          className=" p-4 w-[40rem] h-56 bg-transparent border-white border-2 rounded-xl font-inria text-md font-normal"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Your Message"
+          required
+        />
+      </div>
       <button type="submit" disabled={status === "sending"}>
         {status === "sending" ? "Sending..." : "Send Message"}
       </button>

@@ -50,8 +50,12 @@ export default function Page() {
       >
         <div className="w-full p-8 h-full flex flex-col items-center justify-center text-center font-comfortaa font-bold text-[#ffd8d3] text-xl">
           <div className="mb-20">
-            The contact formular will go just right here. While it's being
-            developed take a look at my other pages:
+            <p>Thanks for visiting!</p>
+            <p>I'd love to hear from you</p>
+            <p>
+              whether you have questions, feedback, or just want to connect.
+              Drop me a message below!
+            </p>
           </div>
           <ContactForm />
           <div className="flex md:flex-row flex-col">
