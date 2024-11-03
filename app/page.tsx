@@ -47,7 +47,7 @@ export default function Page() {
       <div className="h-56"></div>
       <div
         id="contact"
-        className="w-full overflow-hidden md:overflow-visible h-[140vh]"
+        className="w-full overflow-hidden md:overflow-visible h-[220vh] md:h-[140vh]"
       >
         <div className="w-full p-8 text-shadow-textr flex flex-col items-center justify-center gap-8 text-center font-comfortaa font-bold text-[#ffffff] text-2xl">
           <p className="text-7xl">Thanks for visiting!</p>
