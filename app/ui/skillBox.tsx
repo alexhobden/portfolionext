@@ -26,7 +26,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ skill, changeSkill }) => {
         }}
       >
         <Image
-          src={`./skills/${skill}.png`}
+          src={`/skills/${skill}.png`}
           alt=""
           className="max-h-14 object-contain"
         />
