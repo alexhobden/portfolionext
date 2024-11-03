@@ -11,6 +11,22 @@ const Header: React.FC = () => {
         <HeaderButton title="About Me" reference="about-me"></HeaderButton>
         <HeaderButton title="My Skills" reference="skills"></HeaderButton>
         <HeaderButton title="Contact Me" reference="contact"></HeaderButton>
+        <a
+          href="https://linkedin.com/in/alexander-hobden-982a29204"
+          className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr my-8 mx-12"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p>Linked In</p>
+        </a>
+        <a
+          href="https://github.com/alexhobden"
+          className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr my-8 mx-12"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p>GitHub</p>
+        </a>
       </div>
     </div>
   );

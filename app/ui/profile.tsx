@@ -62,12 +62,12 @@ const Profile: React.FC<ProfileProps> = ({ children }) => {
             </p>
             <br />
             <p>
-              I love both coding, but in addition to the code and logic, I like
-              to implement my own designs with Figma and libraries such as
-              Tailwind and Framer Motion.
+              I like to develop websites, but in addition to the code and logic,
+              I like to implement my own designs with Figma and libraries such
+              as Tailwind and Framer Motion.
             </p>
             <br />
-            <p>I would love working with you!</p>
+            <p>Feel free to take a look around my page!</p>
           </div>
           //   </motion.div>
         )}

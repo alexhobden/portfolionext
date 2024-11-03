@@ -49,11 +49,13 @@ const ContactForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col space-y-8 text-white w-[40rem]"
+      className="flex flex-col font-inria space-y-8 text-white w-[40rem]"
     >
-      <h2 className="text-left text-3xl font-bold text-white">Contact Me!</h2>
+      <h2 className="text-left text-3xl font-comfortaa font-bold text-white">
+        Contact Me!
+      </h2>
       <div>
-        <p className="text-left mb-4">Your name*</p>
+        <p className="text-left font-inria mb-4">Your name*</p>
         <input
           className="p-4 w-[40rem] h-12 bg-transparent border-white border-2 rounded-xl font-inria font-normal"
           type="text"
@@ -65,7 +67,7 @@ const ContactForm: React.FC = () => {
         />
       </div>
       <div>
-        <p className="text-left mb-4">Your email*</p>
+        <p className="text-left font-inria mb-4">Your email*</p>
         <input
           className="p-4 w-[40rem] h-12 bg-transparent border-white border-2 rounded-xl font-inria font-normal"
           type="email"
@@ -77,7 +79,7 @@ const ContactForm: React.FC = () => {
         />
       </div>
       <div>
-        <p className="text-left mb-4">Your message*</p>
+        <p className="text-left font-inria mb-4">Your message*</p>
         <textarea
           className=" p-4 w-[40rem] h-56 bg-transparent border-white border-2 rounded-xl font-inria text-md font-normal"
           name="message"
@@ -87,7 +89,11 @@ const ContactForm: React.FC = () => {
           required
         />
       </div>
-      <button type="submit" disabled={status === "sending"}>
+      <button
+        className="bg-white text-black p-2 rounded-xl font-inria font-normal"
+        type="submit"
+        disabled={status === "sending"}
+      >
         {status === "sending" ? "Sending..." : "Send Message"}
       </button>
       {status === "sent" && <p>Message sent!</p>}

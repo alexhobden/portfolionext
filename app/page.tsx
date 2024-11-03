@@ -9,6 +9,7 @@ import Profile from "./ui/profile";
 import Skills from "./ui/skills";
 import Head from "next/head";
 import ContactForm from "./ui/contactForm";
+import Footer from "./ui/footer";
 
 export default function Page() {
   return (
@@ -44,48 +45,24 @@ export default function Page() {
         </div>
       </div>
       <Skills></Skills>
+      <div className="h-56"></div>
       <div
         id="contact"
-        className="w-full overflow-hidden md:overflow-visible h-[100vh]"
+        className="w-full overflow-hidden md:overflow-visible h-[140vh]"
       >
-        <div className="w-full p-8 h-full flex flex-col items-center justify-center text-center font-comfortaa font-bold text-[#ffd8d3] text-xl">
-          <div className="mb-20">
-            <p>Thanks for visiting!</p>
-            <p>I'd love to hear from you</p>
-            <p>
-              whether you have questions, feedback, or just want to connect.
-              Drop me a message below!
-            </p>
-          </div>
-          <ContactForm />
-          <div className="flex md:flex-row flex-col">
-            <a
-              href="https://wavy.hobden.one"
-              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr my-8 mx-12"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>Wavy (Work in Progress)</p>
-            </a>
-            <a
-              href="https://linkedin.com/in/alexander-hobden-982a29204"
-              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr my-8 mx-12"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>Linked In</p>
-            </a>
-            <a
-              href="https://github.com/alexhobden"
-              className="text-[#ffffff] hover:text-blue-200 hover:cursor-pointer text-shadow-textr my-8 mx-12"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p>GitHub</p>
-            </a>
-          </div>
+        <div className="w-full p-8 text-shadow-textr flex flex-col items-center justify-center gap-8 text-center font-comfortaa font-bold text-[#ffffff] text-2xl">
+          <p className="text-7xl">Thanks for visiting!</p>
+          <br />
+          <p>Want to connect? I'd love hearing from you</p>
+          <p>Feel free to drop me a message below</p>
         </div>
+        <div className="h-64"></div>
+        <div className="font-comfortaa font-bold text-[#ffd8d3] text-xl flex flex-col items-center justify-center">
+          <ContactForm />
+        </div>
+        <div className="flex md:flex-row flex-col"></div>
       </div>
+      <Footer />
     </>
   );
 }
