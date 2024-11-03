@@ -13,7 +13,6 @@ import Footer from "./ui/footer";
 export default function Page() {
   return (
     <>
-      <Header />
       {/* <div className="fixed bottom-8 right-8">
         <img src="./icons/downarrow.svg" alt="" className="w-8 h-8" />
       </div> */}
@@ -61,7 +60,6 @@ export default function Page() {
         </div>
         <div className="flex md:flex-row flex-col"></div>
       </div>
-      <Footer />
     </>
   );
 }

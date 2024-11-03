@@ -25,15 +25,13 @@ const SkillBox: React.FC<SkillBoxProps> = ({ skill, changeSkill }) => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div>
-          <Image
-            src={`/skills/${skill}.png`}
-            alt=""
-            width={100}
-            height={100}
-            className="max-h-14 object-contain"
-          />
-        </div>
+        <Image
+          src={`/skills/${skill}.png`}
+          alt=""
+          width={100}
+          height={100}
+          className="max-h-14 w-auto object-contain"
+        />
       </div>
     </motion.div>
   );
