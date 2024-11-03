@@ -1,7 +1,6 @@
 // app/ContactForm.tsx
 "use client";
 
-import { div } from "framer-motion/client";
 import { useState } from "react";
 import React from "react";
 
@@ -42,6 +41,7 @@ const ContactForm: React.FC = () => {
         setStatus("error");
       }
     } catch (error) {
+      console.error(error);
       setStatus("error");
     }
   };

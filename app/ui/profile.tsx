@@ -57,8 +57,8 @@ const Profile: React.FC<ProfileProps> = ({ children }) => {
         {showText && (
           <div className="w-full p-12 pr-16 font-inria text-xl">
             <p>
-              Hello, my Name is Alex Hobden and I'm a web designer and developer
-              from Germany.
+              Hello, my Name is Alex Hobden and I&apos;m a web designer and
+              developer from Germany.
             </p>
             <br />
             <p>

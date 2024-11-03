@@ -7,7 +7,6 @@ import Portrait from "./ui/portrait";
 import InfoBox from "./ui/infoBox";
 import Profile from "./ui/profile";
 import Skills from "./ui/skills";
-import Head from "next/head";
 import ContactForm from "./ui/contactForm";
 import Footer from "./ui/footer";
 
@@ -53,7 +52,7 @@ export default function Page() {
         <div className="w-full p-8 text-shadow-textr flex flex-col items-center justify-center gap-8 text-center font-comfortaa font-bold text-[#ffffff] text-2xl">
           <p className="text-7xl">Thanks for visiting!</p>
           <br />
-          <p>Want to connect? I'd love hearing from you</p>
+          <p>Want to connect? I&apos;d love hearing from you</p>
           <p>Feel free to drop me a message below</p>
         </div>
         <div className="h-64"></div>
