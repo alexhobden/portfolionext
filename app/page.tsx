@@ -1,14 +1,12 @@
 import React from "react";
 import "./fonts.css";
 import "./globals.css";
-import Header from "./ui/header";
 import Frame from "./ui/frame";
 import Portrait from "./ui/portrait";
 import InfoBox from "./ui/infoBox";
 import Profile from "./ui/profile";
 import Skills from "./ui/skills";
 import ContactForm from "./ui/contactForm";
-import Footer from "./ui/footer";
 
 export default function Page() {
   return (
