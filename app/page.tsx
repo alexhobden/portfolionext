@@ -1,19 +1,16 @@
 import React from "react";
 import "./fonts.css";
 import "./globals.css";
-import Header from "./ui/header";
 import Frame from "./ui/frame";
 import Portrait from "./ui/portrait";
 import InfoBox from "./ui/infoBox";
 import Profile from "./ui/profile";
 import Skills from "./ui/skills";
 import ContactForm from "./ui/contactForm";
-import Footer from "./ui/footer";
 
 export default function Page() {
   return (
     <>
-      <Header />
       {/* <div className="fixed bottom-8 right-8">
         <img src="./icons/downarrow.svg" alt="" className="w-8 h-8" />
       </div> */}
@@ -61,7 +58,6 @@ export default function Page() {
         </div>
         <div className="flex md:flex-row flex-col"></div>
       </div>
-      <Footer />
     </>
   );
 }
