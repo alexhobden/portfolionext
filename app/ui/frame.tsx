@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-
 interface ProfileProps {
   children?: React.ReactNode;
 }

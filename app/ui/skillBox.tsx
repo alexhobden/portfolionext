@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface SkillBoxProps {
   skill: string;
@@ -24,7 +25,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ skill, changeSkill }) => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <img
+        <Image
           src={`./skills/${skill}.png`}
           alt=""
           className="max-h-14 object-contain"

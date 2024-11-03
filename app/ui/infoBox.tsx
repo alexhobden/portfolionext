@@ -38,7 +38,7 @@ const InfoBox: React.FC = () => {
             transition: "transform 0.1s ease-out",
           }}
         >
-          I'M A WEB
+          I\'M A WEB
         </p>
         <div
           className="flex md:items-end md:justify-start justify-center"
